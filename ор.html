@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Трейдердің күнделігі — қосылу</title>
+  <meta name="description" content="Трейдердің күнделігі: Жабық арнаға тікелей қосылу.">
+  <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
+  <style>
+    :root{
+      --bg:#0e1116; --card:#151a23; --muted:#9aa3b2; --text:#e9edf3; --line:#232a37;
+      --accent:#2ca85f; --accent-hover:#249252; --shadow: 0 20px 40px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:
+        radial-gradient(1200px 800px at 10% -10%, #1a2340 0%, rgba(26,35,64,0) 60%),
+        radial-gradient(1000px 700px at 100% 0%, #1a2a28 0%, rgba(26,42,40,0) 55%),
+        var(--bg);
+      color:var(--text);
+      display:flex; align-items:center; justify-content:center; padding:24px;
+    }
+    .card{
+      width:100%; max-width:720px; background:var(--card); border:1px solid var(--line);
+      border-radius:20px; box-shadow:var(--shadow); overflow:hidden;
+    }
+    .hero{padding:24px 24px 12px; display:flex; gap:16px; align-items:center;}
+    .avatar{
+      width:84px; height:84px; border-radius:50%;
+      background:linear-gradient(135deg,#2b6cb0,#3182ce,#63b3ed);
+      display:grid; place-items:center; color:white; font-weight:800; font-size:28px; letter-spacing:.5px;
+      user-select:none;
+    }
+    .head{flex:1; min-width:0}
+    .badge{
+      display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:700;
+      text-transform:uppercase; letter-spacing:.06em; padding:6px 10px; border-radius:999px;
+      color:#e8f0ff; background:#24417d
+    }
+    .title{font-size:24px; margin:10px 0 4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+    .handle{color:var(--muted); font-size:14px}
+    .stats{display:flex; gap:14px; flex-wrap:wrap; padding:6px 24px 16px}
+    .stat{display:flex; align-items:center; gap:8px; padding:8px 12px; border:1px solid var(--line); border-radius:12px; color:#cfd6e5; font-size:14px}
+    .desc{padding:0 24px 20px; color:#cfd6e5; line-height:1.65; white-space:pre-line}
+    .cta{padding:8px 24px 26px; display:flex; gap:12px; flex-wrap:wrap}
+    .btn{appearance:none; border:0; border-radius:12px; padding:14px 18px; font-weight:800; cursor:pointer}
+    .btn-primary{background:var(--accent); color:#fff; flex:1; min-width:220px}
+    .btn-primary:hover{background:var(--accent-hover)}
+    .btn-secondary{background:transparent; color:#c2cfdf; border:1px solid var(--line)}
+    .foot{padding:16px 24px 22px; border-top:1px solid var(--line); color:#9aa3b2; font-size:12px; display:flex; gap:10px; flex-wrap:wrap; align-items:center}
+    .kbd{padding:2px 6px; border-radius:6px; border:1px solid var(--line); background:#0f141c}
+    @media (max-width:540px){
+      .hero{padding:18px} .stats{padding:6px 18px 12px} .desc{padding:0 18px 16px} .cta{padding:6px 18px 22px} .foot{padding:14px 18px 18px}
+    }
+  </style>
+
+  <!-- Facebook Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '4050619405266778');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4050619405266778&ev=PageView&noscript=1"/>
+  </noscript>
+</head>
+<body>
+  <main class="card" role="main">
+    <section class="hero">
+      <div class="avatar" aria-hidden="true">TG</div>
+      <div class="head">
+        <span class="badge">Канал</span>
+        <h1 class="title">Трейдердің күнделігі</h1>
+        <div class="handle">@invite_link</div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Статистика">
+      <div class="stat">👥 <strong>3 733</strong> subscribers</div>
+      <div class="stat">🟢 Тікелей шақыру арқылы қолжетімді</div>
+    </section>
+
+    <section class="desc">Мен өз жолымды таптым – енді бөлісетін уақытым келді.
+Сататын ештеңем жоқ.
+Ешкімге үйретпеймін, бірақ көрсетемін: қалай нақты табысқа жетуге болады.</section>
+
+    <section class="cta">
+      <button id="joinBtn" class="btn btn-primary">🚀 Telegram-ға ашу</button>
+      <button id="copyBtn" class="btn btn-secondary">Сілтемені көшіру</button>
+    </section>
+
+    <footer class="foot">
+      Батырманы басқанда сіз бірден Telegram-ға өтесіз. <span class="kbd">Lead</span> оқиғасы арна ашылғанға дейін белгіленеді.
+    </footer>
+  </main>
+
+  <script>
+    const TG_INVITE = "https://t.me/+HoTCIpFG70cxYmY6";
+    // UTM-ді бұзбаймыз: invite-ты таза қалдырамыз, ал utm-ді hash-қа саламыз
+    const p = new URLSearchParams(location.search);
+    const utmKeys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
+    const extra = [];
+    utmKeys.forEach(k => { if (p.get(k)) extra.push(k + '=' + p.get(k)); });
+    const finalUrl = TG_INVITE + (extra.length ? ('#' + extra.join('__')) : '');
+
+    document.getElementById('joinBtn').addEventListener('click', function(ev){
+      ev.preventDefault();
+      try {
+        fbq('track', 'Lead', {eventID: Date.now() + '-' + Math.random().toString(36).slice(2)});
+        fbq('trackCustom', 'OutboundTelegram', {href: finalUrl});
+      } catch(e){}
+      const go = () => window.open(finalUrl, '_blank', 'noopener');
+      setTimeout(go, 180);
+      setTimeout(go, 650);
+    }, {passive:false});
+
+    document.getElementById('copyBtn').addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(finalUrl); alert('Сілтеме көшірілді'); }
+      catch(e){ prompt('Сілтемені қолмен көшіріңіз:', finalUrl); }
+    });
+  </script>
+</body>
+</html>
